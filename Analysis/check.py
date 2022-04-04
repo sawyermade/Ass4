@@ -5,7 +5,7 @@ def makeTen(data_list):
 		[data_list.append(random.randint(-5, 5)) for i in range(10 - len(data_list))]
 
 def findUnique(data_list):
-	return [i for i in data_list if data_list.count(i) == 1]
+	return [i for i in set(data_list) if data_list.count(i) == 1]
 
 def main():
 	data_list = [1, 2, 2]
