@@ -10,10 +10,10 @@ def printSummary(data_list):
 	unique_list = check.findUnique(data_list)
 	non_unique_list = set(data_list) - set(unique_list)
 	print('Summary:\n')
-	for i in unique_list: print(f'{i} (1)\n')
-	for i in non_unique_list: print(f'{i} ({data_list.count(i)})\n')
 	# [print(f'{i} (1)\n') for i in unique_list]
 	# [print(f'{i} ({data_list.count(i)})\n') for i in set(data_list) if i not in unique_list]
+	for i in unique_list: print(f'{i} (1)\n')
+	for i in non_unique_list: print(f'{i} ({data_list.count(i)})\n')
 
 
 def main():
