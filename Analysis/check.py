@@ -1,8 +1,10 @@
 import random
 
 def makeTen(data_list):
-	if len(data_list) < 10:
-		[data_list.append(random.randint(-5, 5)) for i in range(10 - len(data_list))]
+	# if len(data_list) < 10:
+	# 	[data_list.append(random.randint(-5, 5)) for i in range(10 - len(data_list))]
+	while len(data_list) < 10:
+		data_list.append(random.randint(-5, 5))
 
 def findUnique(data_list):
 	return [i for i in set(data_list) if data_list.count(i) == 1]
