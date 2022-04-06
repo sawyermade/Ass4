@@ -10,9 +10,11 @@ cd Ass4
 ## Run
 ```
 python3 Test/drive.py
+```
 
 or
 
+```
 cd Test
 python3 drive.py
 ```
