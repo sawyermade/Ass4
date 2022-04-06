@@ -6,7 +6,7 @@ def getData(data_list):
 	for i in sys.argv[1:]: data_list.append(int(i))
 
 def main():
-	data_list = []
+	data_list = [1, 2, 3]
 	getData(data_list)
 	print(f'You entered {len(data_list)} integers: {data_list}')
 
